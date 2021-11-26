@@ -24,11 +24,6 @@ class ArticlesController
         var_dump($article);
     }
 
-    public function delete()
-    {
-
-    }
-
     public function view(int $id)
     {
        $article = Article::getById($id);
