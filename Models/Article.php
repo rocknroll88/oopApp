@@ -28,5 +28,9 @@ class Article extends ActiveRecordEntity
     {
         return User::getById($this->authorId);
     }
+    public function getAuth()
+    {
+        return null;
+    }
 
 }
