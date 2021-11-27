@@ -32,5 +32,8 @@ class Article extends ActiveRecordEntity
     {
         return null;
     }
-
+    public function test()
+    {
+        return null;
+    }
 }
