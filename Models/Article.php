@@ -1,6 +1,5 @@
 <?php
 namespace Models;
-
 use Models\User;
 class Article extends ActiveRecordEntity
 {
@@ -27,13 +26,5 @@ class Article extends ActiveRecordEntity
     public function getAuthor(): User
     {
         return User::getById($this->authorId);
-    }
-    public function getAuth()
-    {
-        return null;
-    }
-    public function test()
-    {
-        return null;
     }
 }
