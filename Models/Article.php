@@ -1,7 +1,9 @@
 <?php
+
 namespace Models;
 
 use Models\User;
+
 class Article extends ActiveRecordEntity
 {
     protected $name;
@@ -9,17 +11,17 @@ class Article extends ActiveRecordEntity
     protected $authorId;
     protected $createdAt;
 
-    public function getName() :string
+    public function getName(): string
     {
         return $this->name;
     }
 
-    public function getText() :string
+    public function getText(): string
     {
         return $this->text;
     }
 
-    protected static function getTableName() :string
+    protected static function getTableName(): string
     {
         return 'articles';
     }
@@ -28,9 +30,4 @@ class Article extends ActiveRecordEntity
     {
         return User::getById($this->authorId);
     }
-    public function getAuth()
-    {
-        return null;
-    }
-
 }
