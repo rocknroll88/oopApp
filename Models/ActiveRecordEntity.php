@@ -1,4 +1,8 @@
 <?php
+/**
+ * @author Konstantin Savelyev <savelyevks@htomail.com>
+ */
+
 namespace Models;
 use Services\Db;
 abstract class ActiveRecordEntity 
