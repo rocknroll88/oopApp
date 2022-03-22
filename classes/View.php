@@ -20,4 +20,9 @@ class view
         ob_end_clean();
         echo $buffer;
     }
+
+    public function testMethod()
+    {
+        
+    }
 }
